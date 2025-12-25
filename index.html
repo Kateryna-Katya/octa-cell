@@ -1,56 +1,289 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/octa-cell/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Octa-Cell | Искусство разработки AI-ботов</title>
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
     <script type="module" crossorigin src="/octa-cell/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/octa-cell/assets/styles-guStct1H.css">
+    <link rel="stylesheet" crossorigin href="/octa-cell/assets/styles-CUk6ILi1.css">
   </head>
   <body>
     <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
+  <div class="container header__container">
+      <a href="/" class="logo">
+          <span class="logo__icon"></span>
+          <span class="logo__text">Octa-Cell</span>
       </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
+
+      <nav class="nav" id="main-nav">
+          <ul class="nav__list">
+              <li><a href="#hero" class="nav__link">Главная</a></li>
+              <li><a href="#about" class="nav__link">Платформа</a></li>
+              <li><a href="#features" class="nav__link">Преимущества</a></li>
+              <li><a href="#innovations" class="nav__link">Инновации</a></li>
+              <li><a href="#blog" class="nav__link">Блог</a></li>
+          </ul>
+      </nav>
+
+      <div class="header__actions">
+          <a href="#contact" class="btn btn--primary">Начать</a>
+          <button class="burger" aria-label="Menu">
+              <span></span>
+          </button>
+      </div>
   </div>
 </header>
-
+<div class="mobile-menu" id="mobile-menu">
+  <nav class="mobile-nav">
+      <ul class="mobile-nav__list">
+          <li><a href="#hero" class="mobile-nav__link">Главная</a></li>
+          <li><a href="#about" class="mobile-nav__link">Платформа</a></li>
+          <li><a href="#features" class="mobile-nav__link">Преимущества</a></li>
+          <li><a href="#innovations" class="mobile-nav__link">Инновации</a></li>
+          <li><a href="#blog" class="mobile-nav__link">Блог</a></li>
+      </ul>
+      <a href="#contact" class="btn btn--primary mobile-nav__btn">Начать сейчас</a>
+  </nav>
+</div>
 
     <main>
       <!-- Loads the specified .html file -->
       
+    <section class="hero" id="hero">
+        <div class="container hero__container">
+            <div class="hero__content">
+                <span class="badge" data-aos="fade-up">Платформа года 2025</span>
+                <h1 class="hero__title" id="hero-title">Технология нового поколения для разработки AI-ассистентов</h1>
+                <p class="hero__subtitle">Воплотите мечты в реальность с передовой цифровой инфраструктурой. Создавайте ботов, которые меняют правила игры.</p>
+                <div class="hero__actions">
+                    <a href="#contact" class="btn btn--primary">Запросить доступ</a>
+                    <a href="#about" class="btn btn--outline">Узнать детали</a>
+                </div>
+            </div>
+            <div class="hero__visual">
+                <div class="orb"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-grid">
+                <div class="section-image">
+                    <img src="img/placeholder.png" alt="Platform" class="parallax-img">
+                </div>
+                <div class="section-text">
+                    <h2 class="section-title">AI-инструменты для реальных задач</h2>
+                    <p>Octa-Cell — это не просто блог, это платформа, где инновационная технология встречается с практикой. Мы предлагаем решения, которые работают на вас, позволяя переосмыслить подход к развитию цифровых продуктов.</p>
+                    <ul class="feature-list">
+                        <li><i data-lucide="check-circle"></i> Легко разобраться без опыта</li>
+                        <li><i data-lucide="check-circle"></i> Быстрый и лёгкий старт</li>
+                        <li><i data-lucide="check-circle"></i> Подключение занимает 2 минуты</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-title">Расширьте горизонты проекта</h2>
+                <p class="section-subtitle">Почему разработчики выбирают нашу экосистему</p>
+            </div>
+            <div class="features__grid">
+                <div class="feature-card">
+                    <div class="feature-card__icon"><i data-lucide="zap"></i></div>
+                    <h3 class="feature-card__title">Скорость развертывания</h3>
+                    <p>Пошаговый путь, понятный каждому. От идеи до первого бота за считанные часы.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-card__icon"><i data-lucide="shield-check"></i></div>
+                    <h3 class="feature-card__title">Безопасность данных</h3>
+                    <p>Методологии, доказавшие эффективность в защите корпоративных данных.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-card__icon"><i data-lucide="trending-up"></i></div>
+                    <h3 class="feature-card__title">Стратегия роста</h3>
+                    <p>Технология для пассивного дохода и масштабирования ваших сервисов в Европе.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="innovations" id="innovations">
+        <div class="container">
+            <div class="innovations__wrapper">
+                <div class="innovations__content">
+                    <h2 class="section-title text-white">Инновации, которые <br><span>меняют правила</span></h2>
+                    <p>Платформа уже доступна в Европе. Откройте новые возможности с экспертной поддержкой на всех этапах разработки.</p>
+                    <a href="#contact" class="btn btn--secondary">Оценить перспективы</a>
+                </div>
+                <div class="innovations__stats">
+                    <div class="stat-item">
+                        <span class="stat-num">99%</span>
+                        <span class="stat-label">Точность AI</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-num">24/7</span>
+                        <span class="stat-label">Поддержка</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="blog" id="blog">
+        <div class="container">
+            <div class="blog__header">
+                <h2 class="section-title">Практики, применимые сегодня</h2>
+                <a href="#" class="link-more">Все статьи <i data-lucide="arrow-right"></i></a>
+            </div>
+            <div class="blog__grid">
+                <article class="post-card">
+                    <div class="post-card__image"><img src="img/placeholder.png" alt="Post"></div>
+                    <div class="post-card__content">
+                        <span class="post-card__date">12 Дек, 2025</span>
+                        <h3 class="post-card__title">Как построить карьеру в AI-инжиниринге</h3>
+                        <p>Разбираем пошаговый путь от новичка до ведущего разработчика ассистентов.</p>
+                    </div>
+                </article>
+                <article class="post-card">
+                    <div class="post-card__image"><img src="img/placeholder.png" alt="Post"></div>
+                    <div class="post-card__content">
+                        <span class="post-card__date">08 Дек, 2025</span>
+                        <h3 class="post-card__title">Автоматизация клиентского сервиса в ЕС</h3>
+                        <p>Предложение активно только в странах ЕС: локальные кейсы внедрения.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+      <div class="container">
+          <div class="contact__grid">
+              <div class="contact__info">
+                  <span class="badge">Обратная связь</span>
+                  <h2 class="section-title">Начать сейчас — <br>легко и быстро</h2>
+                  <p class="contact__text">
+                      Получите **бесплатную консультацию по всем вопросам**. Наши эксперты помогут переосмыслить подход к развитию вашего проекта и предложат передовую цифровую инфраструктуру.
+                  </p>
+                  <div class="contact__meta">
+                      <div class="meta-item">
+                          <i data-lucide="check-circle"></i>
+                          <span>Экспертная поддержка на всех этапах</span>
+                      </div>
+                      <div class="meta-item">
+                          <i data-lucide="globe"></i>
+                          <span>Платформа уже доступна в Европе</span>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="contact__form-container">
+                  <form id="ai-form" class="form">
+                      <div class="form__group">
+                          <input type="text" name="name" class="form__input" placeholder="Ваше имя" required>
+                      </div>
+                      <div class="form__group">
+                          <input type="email" name="email" class="form__input" placeholder="Email" required>
+                      </div>
+                      <div class="form__group">
+                          <input type="tel" id="phone" name="phone" class="form__input" placeholder="Телефон (только цифры)" required>
+                      </div>
+
+                      <div class="form__captcha">
+                          <span id="captcha-question" class="captcha-label"></span>
+                          <input type="number" id="captcha-input" class="form__input form__input--captcha" placeholder="?" required>
+                      </div>
+
+                      <label class="form__checkbox-label">
+                          <input type="checkbox" required>
+                          <span class="checkbox-custom"></span>
+                          <span class="checkbox-text">Я согласен на обработку персональных данных</span>
+                      </label>
+
+                      <button type="submit" class="btn btn--primary btn--full">Запросить доступ</button>
+
+                      <div id="form-status" class="form__status"></div>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </section>
     </main>
 
     <footer class="footer">
-  <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
+  <div class="container footer__container">
+      <div class="footer__col footer__col--info">
+          <a href="/" class="logo logo--footer">
+              <span class="logo__text">Octa-Cell</span>
+          </a>
+          <p class="footer__description">
+              Технологии нового поколения для создания интеллектуальных экосистем. AI-инструменты для реальных задач.
+          </p>
+      </div>
+
+      <div class="footer__col">
+          <h4 class="footer__title">Навигация</h4>
+          <ul class="footer__links">
+              <li><a href="#about">О проекте</a></li>
+              <li><a href="#features">Возможности</a></li>
+              <li><a href="#blog">Статьи</a></li>
+              <li><a href="#contact">Контакты</a></li>
+          </ul>
+      </div>
+
+      <div class="footer__col">
+          <h4 class="footer__title">Документы</h4>
+          <ul class="footer__links">
+            <li><a href="privacy.html">Политика конфиденциальности</a></li>
+            <li><a href="cookies.html">Политика использования файлов cookie</a></li>
+            <li><a href="terms.html">Условия использования</a></li>
+            <li><a href="return.html">Политика возврата</a></li>
+            <li><a href="disclaimer.html">Отказ от ответственности</a></li>
+            <li><a href="personal-data-policy.html">Политика обработки персональных данных</a></li>
+
+          </ul>
+      </div>
+
+      <div class="footer__col">
+          <h4 class="footer__title">Контакты</h4>
+          <ul class="footer__contacts">
+              <li>
+                  <i data-lucide="map-pin"></i>
+                  <span>Friedrichstraße 100, 10117 Berlin, Germany</span>
+              </li>
+              <li>
+                  <i data-lucide="phone"></i>
+                  <a href="tel:+493012345678">+49 (30) 123-456-78</a>
+              </li>
+              <li>
+                  <i data-lucide="mail"></i>
+                  <a href="mailto:hello@octa-cell.org">hello@octa-cell.org</a>
+              </li>
+          </ul>
+      </div>
+  </div>
+  <div class="footer__bottom container">
+      <p>&copy; 2025 Octa-Cell. Платформа года. Все права защищены.</p>
   </div>
 </footer>
-
-
+    <div class="cookie-popup" id="cookie-popup">
+      <div class="cookie-popup__content">
+          <p>Этот сайт использует cookies для улучшения работы. Подробнее — в нашей <a href="./cookies.html">Cookie политике</a>.</p>
+          <button class="btn btn--primary btn--sm" id="cookie-accept">Принять</button>
+      </div>
+  </div>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
   </body>
 </html>
